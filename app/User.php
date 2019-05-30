@@ -14,12 +14,5 @@ class User extends Authenticatable
     //thêm người dùng
     protected $table = 'users';
     protected $guarded = [];
-    public function postLogin(Request $request)
-    {
-        $arr = [
-            'email' => $request->email,
-            'password' => $request->password
-        ];      
-        
-    }
+    
 }

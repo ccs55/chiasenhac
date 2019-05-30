@@ -1251,18 +1251,19 @@ fieldset#body {
 .login-pop {
     width: 20%;
        margin-top: 0.9em;
-    margin-left: 3%;
+    margin-left: 2%;
 }
 .profile_details {
     padding: 0 5em;
 }
 a.top-sign {
     display: inline-block;
-    float: right;
-    margin-left: 4em;
+	float: right;
+	
+    margin-left: 2em;
     margin-top: 0.2em;
     color: #111;
-    font-size: 1.25em;
+    font-size: 0.77em;
 }
 /*--albums--*/
 .albums {
@@ -3940,7 +3941,7 @@ text-decoration:none;
 	a.top-sign {
 		margin-left: 0.5em;
 		margin-top: 0.2em;
-		font-size: 1.2em;
+		font-size: 0.7em;
 	}
 	#loginpop a span {
 		padding: 7px 7px;
@@ -3956,7 +3957,7 @@ text-decoration:none;
 	a.top-sign {
 		margin-left: 0.2em;
 		margin-top: 0.2em;
-		font-size: 1.2em;
+		font-size: 0.7em;
 	}
 	.modal-dialog.facebook {
 		    width: 423px;
