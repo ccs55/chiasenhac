@@ -999,6 +999,7 @@ footer  p a:hover{
 	    position: absolute;
 }
 .banner-info h3 {
+    font-family: -webkit-body;
     font-size: 2.5em;
     font-weight: 700;
     color: #fff;
