@@ -1,3 +1,15 @@
+<?php
+//fetch.php
+$connect = mysqli_connect("localhost", "root", "", "zam_mysql");
+mysqli_set_charset($connect, 'UTF8');
+  if (mysqli_connect_errno()) {
+    echo 'Failed to connect to Mysql : '.$mysqli_connect_errno();
+	}
+	$id='Việt Nam';
+	$id1='Hàn Quốc';
+	$id2='United States';
+
+	?>
 <?php include'header4.php'?>
 			<div id="page-wrapper">
 				<div class="inner-content">
@@ -31,148 +43,132 @@
 								</div>
 								<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
 								  <ul id="myTab" class="nav nav-tabs" role="tablist">
-								   <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">China</a></li>
-								   <li role="presentation" class=""><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">Hindi</a></li>
-								   <li role="presentation" class="dropdown">
-									 <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" aria-controls="myTabDrop1-contents" aria-expanded="false">English <span class="caret"></span></a>
-										<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
-										  <li><a href="#dropdown1" tabindex="-1" role="tab" id="dropdown1-tab" data-toggle="tab" aria-controls="dropdown1">Melody</a></li>
-										  <li><a href="#dropdown2" tabindex="-1" role="tab" id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">Classic </a></li>
-										</ul>
-								   </li>
-								   <li role="presentation"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Korea</a></li>
-								    <li role="presentation" class=""><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">France</a></li>
+								   <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Việt Nam</a></li>
+								   <li role="presentation" class=""><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">Hàn Quốc</a></li>
+								   
+								   <li role="presentation"><a href="#aumy" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Âu Mỹ</a></li>
+								    <li role="presentation" class=""><a href="#khac" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">Khác</a></li>
 								</ul>
+							
 								<div id="myTabContent" class="tab-content">
 								  <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
 									<div class="browse-inner">
 								 	 <!-- /agileits -->
-								
-									<div class="col-md-3 artist-grid">
-										<a  href="single.php"><img src="images/a3.jpg" title="allbum-name"></a>
-										 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-												<a class="art" href="single.php">Jame Arina</a>
-										</div>
-									<div class="col-md-3 artist-grid">
-											<a  href="single.php"><img src="images/a6.jpg" title="allbum-name"></a>
-											 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-												<a class="art" href="single.php">Shekh Rav</a>
-										</div>
-									<div class="col-md-3 artist-grid">
-											<a  href="single.php"><img src="images/a7.jpg" title="allbum-name"></a>
-											 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-												<a class="art" href="single.php">Shale John</a>
-										</div>
-									<div class="col-md-3 artist-grid">
-											<a  href="single.php"><img src="images/a4.jpg" title="allbum-name"></a>
-											 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-												<a class="art" href="single.php">Sanki omahu</a>
-										</div>
-									<div class="col-md-3 artist-grid">
-											<a  href="single.php"><img src="images/a5.jpg" title="allbum-name"></a>
-											 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-												<a class="art" href="single.php">Akia maria</a>
-										</div>
-										<div class="col-md-3 artist-grid">
-											<a  href="single.php"><img src="images/a1.jpg" title="allbum-name"></a>
-											 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-											<a class="art" href="single.php">A R Rahman</a>
-										</div>
-									<div class="col-md-3 artist-grid">
-											<a  href="single.php"><img src="images/a2.jpg" title="allbum-name"></a>
-											 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-												<a class="art" href="single.php">Shreya Ghoshal</a>
-										</div>
-									<div class="col-md-3 artist-grid">
-											<a  href="single.php"><img src="images/a8.jpg" title="allbum-name"></a>
-											 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-											<a class="art" href="single.php">Lata Manges</a>
-										</div>
-											<div class="col-md-3 artist-grid">
-													<a  href="single.php"><img src="images/a9.jpg" title="allbum-name"></a>
-													 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-														<a class="art" href="single.php">Arit Sing</a>
-												</div>
-											<div class="col-md-3 artist-grid">
-													<a  href="single.php"><img src="images/a10.jpg" title="allbum-name"></a>
-													 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-														<a class="art" href="single.php">Sunidhi Chauhan</a>
-												</div>
+										<?php
+										$query = "
+										SELECT * FROM casy WHERE QueQuan='$id'
+										";
+										$result = mysqli_query($connect, $query);
+										if(mysqli_num_rows($result) > 0)
+										{
+										
+										foreach($result as $key){
+												?>
 												<div class="col-md-3 artist-grid">
-													<a  href="single.php"><img src="images/a11.jpg" title="allbum-name"></a>
-													 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-														<a class="art" href="single.php">Yuki hana</a>
-												</div>
-											<div class="col-md-3 artist-grid">
-												<a  href="single.php"><img src="images/a12.jpg" title="allbum-name"></a>
-												 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-													<a class="art" href="single.php">Neeti Mohan</a>
-											</div>
+										<a  href="thongtincasy.php?id=<?php echo $key['TenCS'];?>"><img src="student_image/<?php echo $key['HinhAnh']?>"></a>
+										 
+												<a class="art" href="thongtincasy.php?id=<?php echo $key['TenCS'];?>"><?php echo $key['TenCS'] ?></a>
+										</div>
+												
+												<?php
+										}
+										}
+										
+										
+										
+										?>
+								
+									
+									
 											<div class="clearfix"> </div>
 										</div>
 								  </div>
 								  <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
 									   <div class="browse-inner">
-								<div class="col-md-3 artist-grid">
-											<a  href="single.php"><img src="images/a9.jpg" title="allbum-name"></a>
-											 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-												<a class="art" href="single.php">Arijit Sing</a>
+										 <?php
+										$query = "
+										SELECT * FROM casy WHERE QueQuan='$id1'
+										";
+										$result = mysqli_query($connect, $query);
+										if(mysqli_num_rows($result) > 0)
+										{
+										
+										foreach($result as $key){
+												?>
+												<div class="col-md-3 artist-grid">
+										<a  href="thongtincasy.php?id=<?php echo $key['TenCS'];?>"><img src="student_image/<?php echo $key['HinhAnh']?>"></a>
+										 
+												<a class="art" href="thongtincasy.php?id=<?php echo $key['TenCS'];?>"><?php echo $key['TenCS'] ?></a>
 										</div>
-									<div class="col-md-3 artist-grid">
-											<a  href="single.php"><img src="images/a10.jpg" title="allbum-name"></a>
-											 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-												<a class="art" href="single.php">Suni Chauhan</a>
+												
+												<?php
+										}
+										}
+										
+										
+										
+										?>
+									
+								
+									<div class="clearfix"> </div>
+								</div>
+								  </div>
+									<div role="tabpanel" class="tab-pane fade" id="aumy" aria-labelledby="profile-tab">
+									   <div class="browse-inner">
+										 <?php
+										$query = "
+										SELECT * FROM casy WHERE QueQuan='$id2'
+										";
+										$result = mysqli_query($connect, $query);
+										if(mysqli_num_rows($result) > 0)
+										{
+										
+										foreach($result as $key){
+												?>
+												<div class="col-md-3 artist-grid">
+										<a  href="thongtincasy.php?id=<?php echo $key['TenCS'];?>"><img src="student_image/<?php echo $key['HinhAnh']?>"></a>
+										 
+												<a class="art" href="thongtincasy.php?id=<?php echo $key['TenCS'];?>"><?php echo $key['TenCS'] ?></a>
 										</div>
-										<div class="col-md-3 artist-grid">
-											<a  href="single.php"><img src="images/a11.jpg" title="allbum-name"></a>
-											 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-												<a class="art" href="single.php">Yo kikaho</a>
+												
+												<?php
+										}
+										}
+										
+										
+										
+										?>
+									
+								
+									<div class="clearfix"> </div>
+								</div>
+								  </div>
+									<div role="tabpanel" class="tab-pane fade" id="khac" aria-labelledby="profile-tab">
+									   <div class="browse-inner">
+										 <?php
+										$query = "
+										SELECT * FROM casy WHERE QueQuan !='$id' and QueQuan!='$id1' and QueQuan!='$id2'
+										";
+										$result = mysqli_query($connect, $query);
+										if(mysqli_num_rows($result) > 0)
+										{
+										
+										foreach($result as $key){
+												?>
+												<div class="col-md-3 artist-grid">
+										<a  href="thongtincasy.php?id=<?php echo $key['TenCS'];?>"><img src="student_image/<?php echo $key['HinhAnh']?>"></a>
+										 
+												<a class="art" href="thongtincasy.php?id=<?php echo $key['TenCS'];?>"><?php echo $key['TenCS'] ?></a>
 										</div>
-									<div class="col-md-3 artist-grid">
-										<a  href="single.php"><img src="images/a12.jpg" title="allbum-name"></a>
-										 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-											<a class="art" href="single.php">Neti Mohan</a>
-									</div>
-								<div class="col-md-3 artist-grid">
-									<a  href="single.php"><img src="images/a1.jpg" title="allbum-name"></a>
-									 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-									<a class="art" href="single.php">Ahiko Rahman</a>
-								</div>
-							<div class="col-md-3 artist-grid">
-									<a  href="single.php"><img src="images/a2.jpg" title="allbum-name"></a>
-									 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-										<a class="art" href="single.php">Shreya Ghoshal</a>
-								</div>
-							<div class="col-md-3 artist-grid">
-								<a  href="single.php"><img src="images/a3.jpg" title="allbum-name"></a>
-								 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-										<a class="art" href="single.php">Sukinder singh</a>
-								</div>
-							<div class="col-md-3 artist-grid">
-									<a  href="single.php"><img src="images/a6.jpg" title="allbum-name"></a>
-									 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-										<a class="art" href="single.php">Shekh Rav</a>
-								</div>
-							<div class="col-md-3 artist-grid">
-									<a  href="single.php"><img src="images/a7.jpg" title="allbum-name"></a>
-									 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-										<a class="art" href="single.php">Shalmali</a>
-								</div>
-							<div class="col-md-3 artist-grid">
-									<a  href="single.php"><img src="images/a4.jpg" title="allbum-name"></a>
-									 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-										<a class="art" href="single.php">Sam Wajd</a>
-								</div>
-							<div class="col-md-3 artist-grid">
-									<a  href="single.php"><img src="images/a5.jpg" title="allbum-name"></a>
-									 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-										<a class="art" href="single.php">Ati Amam</a>
-								</div>
-							<div class="col-md-3 artist-grid">
-									<a  href="single.php"><img src="images/a8.jpg" title="allbum-name"></a>
-									 <a href="single.php"><i class="glyphicon glyphicon-play-circle"></i></a>
-									<a class="art" href="single.php">Lata Mangeshkar</a>
-								</div>
+												
+												<?php
+										}
+										}
+										
+										
+										
+										?>
+									
 								
 									<div class="clearfix"> </div>
 								</div>
