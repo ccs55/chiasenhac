@@ -1,3 +1,13 @@
+<?php
+//fetch.php
+$connect = mysqli_connect("localhost", "root", "", "zam_mysql");
+mysqli_set_charset($connect, 'UTF8');
+  if (mysqli_connect_errno()) {
+    echo 'Failed to connect to Mysql : '.$mysqli_connect_errno();
+	}
+
+
+	?>
 <?php include'header4.php'?>
 			<div id="page-wrapper">
 				<div class="inner-content">
@@ -10,35 +20,35 @@
 										<ul class="rslides callbacks callbacks1" id="slider4">
 											   	<li>
 														<div class="banner-img">
-															 <img src="images/11.jpg" class="img-responsive" alt="">
+															 <img src="images/thangtulaloinoidoicuaem.jpg" class="img-responsive" alt="">
 														 </div>
 														<div class="banner-info">
-														              <a class="trend" href="single.php">TRENDING</a>
-																	  <h3>Let Your Home</h3>
-																	  <p>Album by <span>Rock star</span></p>
+														              <a class="trend" href="header3.php?id=Tháng Tư Là Lời Nói Dối Của Em">TRENDING</a>
+																	  <h3>Tháng Tư Là Lời Nói Dối Của Em</h3>
+																	  <p><span>Hà Anh Tuấn</span></p>
 														 </div>
 
 												</li>
 												<li>
 													<div class="banner-img">
-															 <img src="images/22.jpg" class="img-responsive" alt="">
+															 <img src="images/muonmanglatuluc.jpg" class="img-responsive" alt="">
 														 </div>
 														<div class="banner-info">
-																	  <a class="trend" href="single.php">TRENDING</a>
-																	  <h3>Charis Brown feet</h3>
-																	  <p>Album by <span>Rock star</span></p>
+																	  <a class="trend" href="header3.php?id=Nơi Mình Dừng Chân">TRENDING</a>
+																	  <h3>Nơi Mình Dừng Chân</h3>
+																	  <p><span>Mỹ Tâm</span></p>
 														 </div>
 
 
 												</li>
 												<li>
 												 <div class="banner-img">
-															 <img src="images/33.jpg" class="img-responsive" alt="">
+															 <img src="images/ChiaTay.jpg" class="img-responsive" alt="">
 														 </div>
 														<div class="banner-info"> 
-														             <a class="trend" href="single.php">TRENDING</a>
-																	  <h3>Let Your Home</h3>
-																	  <p>Album by <span>Rock star</span></p>
+														             <a class="trend" href="header3.php?id=Chia Tay">TRENDING</a>
+																	  <h3>Chia Tay</h3>
+																	  <p><span>Bùi Anh Tuấn</span></p>
 														 </div>
 
 												 	 <!-- /w3layouts-agileits -->
